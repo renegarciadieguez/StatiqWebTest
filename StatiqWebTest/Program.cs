@@ -7,7 +7,7 @@ await Bootstrapper
     .CreateWeb(args)
     .DeployToGitHubPagesBranch(
         "renegarciadieguez",
-        "renegarciadieguez.github.io/StatiqWebTest",
+        "StatiqWebTest",
         Config.FromSetting<string>("GITHUB_TOKEN"),
         "gh-pages"
     )
