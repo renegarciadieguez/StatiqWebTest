@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - feature/rene/build-actions
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
