@@ -1,0 +1,17 @@
+name: Build
+on:
+  push:
+    branches:
+      - feature/rene/build-actions
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          submodules: recursive
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0'
+      - run: dotnet run
+        working-directory: ./StatiqWebTest
