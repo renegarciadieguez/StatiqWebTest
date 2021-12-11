@@ -1,0 +1,13 @@
+# File system
+**/.DS_Store
+
+# IDE
+**/.idea/*
+
+# Project builds
+**/bin/*
+**/cache/*
+**/obj/*
+
+# Application output
+**/output/*
